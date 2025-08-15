@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from './components/header'
-import Home from './pages/home'
-import Product from './pages/product'
-import About from './pages/about'
-import Contact from './pages/contact'
+import Home from './pages/Home'
+import Product from './pages/Product'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import { Routes,Route } from 'react-router-dom'
-import Login from './pages/login'
+import Login from './pages/Login'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
       </Routes>
       </div>
+      <Footer />
     </div>
   )
 }
